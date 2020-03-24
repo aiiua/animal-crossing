@@ -1,0 +1,10 @@
+$dark: #725CA5;
+$primary: #A998DA;
+$light: #CBC0EE;
+$white: white;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
