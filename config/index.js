@@ -1,3 +1,5 @@
+const path = require('path')
+
 const config = {
   projectName: 'animal-crossing',
   date: '2020-3-20',
@@ -28,8 +30,17 @@ const config = {
       }]
     ]
   },
+  sass: {
+    resource: path.resolve(__dirname, '..', 'src/assets/styles/var.scss')
+  },
   plugins: [],
   defineConstants: {
+  },
+  alias: {
+    '@/components': path.resolve(__dirname, '..', 'src/components'),
+    '@/images': path.resolve(__dirname, '..', 'src/assets/images'),
+    '@/icon': path.resolve(__dirname, '..', 'src/assets/icon'),
+    '@/data': path.resolve(__dirname, '..', 'src/data'),
   },
   mini: {
     postcss: {
