@@ -1,0 +1,44 @@
+{
+  "id": "1709676",
+  "name": "动物森小助手",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "8923910",
+      "name": "家",
+      "font_class": "-",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "8923916",
+      "name": "花朵",
+      "font_class": "-1",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "8923928",
+      "name": "工具",
+      "font_class": "-2",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "8923929",
+      "name": "礼物",
+      "font_class": "-3",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "8923933",
+      "name": "浴缸",
+      "font_class": "-4",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    }
+  ]
+}
