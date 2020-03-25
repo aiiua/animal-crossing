@@ -2,8 +2,8 @@ import Taro, { Component } from '@tarojs/taro'
 import { View, Image,Text } from '@tarojs/components'
 
 import Diy from '@/components/diy'
-import diy from '@/data/diy'
 import menu from '@/data/menus'
+import api from '@/api/diy'
 
 import './index.scss'
 
@@ -12,10 +12,13 @@ class Index extends Component {
 
   state = {
     menus: menu,
-    active: 'all'
+    active: 'all',
+    list: []
   }
 
-  componentWillMount () { }
+  componentWillMount () {
+    this.getCategory('工具')
+  }
 
   componentDidMount () { }
 
@@ -31,8 +34,17 @@ class Index extends Component {
     navigationBarTextStyle: 'white'
   }
 
+  getCategory (type) {
+    api.category(type).then(res => {
+      console.log(res)
+      this.setState({
+        list: res.data
+      })
+    })
+  }
+
   render () {
-    const { menus, active } = this.state
+    const { menus, active, list } = this.state
 
     const menuTaps = menus.map(item => {
       return (
@@ -55,7 +67,7 @@ class Index extends Component {
             </View>
           </View>
           <View className='ani-index-list'>
-            <Diy data={diy}></Diy>
+            <Diy data={list}></Diy>
           </View>
         </View>
       </View>
