@@ -1,0 +1,40 @@
+.ani {
+  &-mater {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    &-item {
+      position: absolute;
+      top: -30px;
+      right: 30px;
+      display: flex;
+    }
+
+    &-image {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+    }
+
+    &-count {
+      margin-left: 4px;
+      color: $dark;
+      font-size: 28px;
+      font-weight: 800;
+
+      &:before {
+        content: '*';
+      }
+    }
+
+    .item1 {
+      top: 50px;
+      right: 0;
+    }
+
+    .item2 {
+      top: 174px;
+    }
+  }
+}
